@@ -3,15 +3,19 @@
 #2 -> add in config/app.php:
 
   'providers' add row:
+  
   Barryvdh\DomPDF\ServiceProvider::class,
 
   'aliases' add row:
+  
   'PDF' => Barryvdh\DomPDF\Facade::class,
 
 #3 -> add in bootstrap/app.php
+
 $app->singleton(\Barryvdh\DomPDF\ServiceProvider::class);
 
 #4 -> run comand:
+
 php artisan vendor:publish --provider="Barryvdh\DomPDF\ServiceProvider"
 
 
