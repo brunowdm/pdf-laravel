@@ -24,6 +24,8 @@ php artisan vendor:publish --provider="Barryvdh\DomPDF\ServiceProvider"
 
 Example Usage:
 
+use Barryvdh\DomPDF\Facade\PDF;
+
 $user = User::find($idUser);
 
 $mes = $this->getMes(session('mesRelEpcto'));
