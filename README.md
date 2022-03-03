@@ -35,6 +35,6 @@ $data = [
     'mes' => $mes
 ];
 
-$pdf = Pdf::loadView('relatorios.pdf.detEmpacotamento', $data);
+$pdf = PDF::loadView('relatorios.pdf.detEmpacotamento', $data);
 
 return $pdf->stream();
